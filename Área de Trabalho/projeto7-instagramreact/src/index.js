@@ -1,26 +1,43 @@
-import ReactDOM from "react-dom";
+import ReactDOM from 'react-dom';
+
+console.log('AQUI')
+
 //Componente
-function App() {
+function Menu() {
 	return (
-		<div>
-			
-			<div class="menu">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Sobre Nós</a></li>
-					<li><a href="#">Contato</a></li>
-				</ul>
-			</div>
-			<div class="conteudo">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
-		</div>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <div class="separador"></div>
+                    <img src="assets/img/logo.png" />
+                </div>
+
+                <div class="logo-mobile">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </div>
+
+                <div class="instagram-mobile">
+                    <img src="assets/img/logo.png" />
+                </div>
+        
+                <div class="pesquisa">
+                    <input type="text" placeholder="Pesquisar" />
+                </div>
+        
+                <div class="icones">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                    <ion-icon name="compass-outline"></ion-icon>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="person-outline"></ion-icon>
+                </div>
+
+                <div class="icones-mobile">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
 	);
 }
 
-const app = App();
-const elemento = document.querySelector(".root");
-ReactDOM.render(app, elemento);
+ReactDOM.render(<Menu />, document.querySelector(".root"));
