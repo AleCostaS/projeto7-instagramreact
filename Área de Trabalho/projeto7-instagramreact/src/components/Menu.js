@@ -1,12 +1,12 @@
 export default function Menu() {
-    const logo = "./assets/img/logo.png";
+const logo = './assets/img/logo.png';
 
     return (
         <div className="navbar">
             <div className="container">
                 <div className="logo">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <div class="separador"></div>
+                    <ion-icon name='logo-instagram'></ion-icon>
+                    <div className="separador"></div>
                     <img src={logo} />
                 </div>
 
