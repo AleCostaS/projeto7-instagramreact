@@ -1,14 +1,14 @@
 export default function Stories() {
-    const nomes = [['./assets/img/9gag.svg', '9gag'], ['./assets/img/meowed.svg', 'meowed'], ['./assets/img/barked.svg', 'barked'], ['./assets/img/nathanwpylestrangeplanet.svg', 'nathanwpylestrangeplanet']];
+    const users = [['../assets/img/9gag.svg', '9gag'], ['../assets/img/meowed.svg', 'meowed'], ['./assets/img/barked.svg', 'barked'], ['./assets/img/nathanwpylestrangeplanet.svg', 'nathanwpylestrangeplanet'], ['./assets/img/wawawicomics.svg', 'wawawicomics'], ['./assets/img/respondeai.svg', 'respondeai'], ['./assets/img/filomoderna.svg', 'filomoderna'], ['./assets/img/memeriagourmet.svg', 'memeriagourmet']];
     return (
         <div className="stories">
-            {nomes.map(nome => {
-            return (<div class="story">
-                <div class="imagem">
-                <img src={nome[0]} />
+            {users.map(usuarios => {
+            return (<div className="story">
+                <div className="imagem">
+                <img src={usuarios[0]} />
                 </div>
-                <div class="usuario">
-                {nome[1]}
+                <div className="usuario">
+                {usuarios[1]}
                 </div>
             </div>)})}
 

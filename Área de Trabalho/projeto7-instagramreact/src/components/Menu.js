@@ -1,5 +1,5 @@
 export default function Menu() {
-const logo = './assets/img/logo.png';
+const logo = '../assets/img/logo.png';
 
     return (
         <div className="navbar">
