@@ -1,5 +1,17 @@
 export default function Posts() {
     const users = [['../assets/img/meowed.svg', 'meowed', 'assets/img/gato-telefone.svg', 'assets/img/respondeai.svg', 'respondeai', '101.523'], ['../assets/img/barked.svg', 'barked', 'assets/img/dog.svg', 'assets/img/adorable_animals.svg', 'adorable_animals', '99.159']];
+    
+    const curtir = e => {
+        let v = false;
+        const like = e.target.parentNode;
+        if (!like.classList.contains('liked')){
+            v = !v;
+        }
+        like.classList.toggle('liked');
+        
+        e.target.name = v ? 'heart' : 'heart-outline';
+    }
+    
     return (
         <div className="posts">
             {users.map(user => {
@@ -22,7 +34,9 @@ export default function Posts() {
                 <div className="fundo">
                     <div className="acoes">
                     <div>
-                        <ion-icon name="heart-outline"></ion-icon>
+                        <span className='like' onClick={curtir}>
+                            <ion-icon name="heart-outline"></ion-icon>
+                        </span>
                         <ion-icon name="chatbubble-outline"></ion-icon>
                         <ion-icon name="paper-plane-outline"></ion-icon>
                     </div>

@@ -1,5 +1,5 @@
 export default function Sugestoes() {
-    const sugestoes = [['../assets/img/bad.vibes.memes.svg', 'bad.vibes.memes'], ['../assets/img/chibirdart.svg', 'chibirdart'], ['./assets/img/razoesparaacreditar.svg', 'razoesparaacreditar'], ['./assets/img/adorable_animals.svg', 'adorable_animals'], ['./assets/img/smallcutecats.svg', 'smallcutecats'], ['./assets/img/respondeai.svg', 'respondeai'], ['./assets/img/filomoderna.svg', 'filomoderna'], ['./assets/img/memeriagourmet.svg', 'memeriagourmet']];
+    const sugestoes = [['./assets/img/bad.vibes.memes.svg', 'bad.vibes.memes'], ['../assets/img/chibirdart.svg', 'chibirdart'], ['./assets/img/razoesparaacreditar.svg', 'razoesparaacreditar'], ['./assets/img/adorable_animals.svg', 'adorable_animals'], ['./assets/img/smallcutecats.svg', 'smallcutecats'], ['./assets/img/respondeai.svg', 'respondeai'], ['./assets/img/filomoderna.svg', 'filomoderna'], ['./assets/img/memeriagourmet.svg', 'memeriagourmet']];
     return (
         <div className="sugestoes">
             <div className="titulo">
