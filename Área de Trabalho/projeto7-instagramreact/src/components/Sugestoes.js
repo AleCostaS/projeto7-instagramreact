@@ -1,5 +1,14 @@
+import badvibesmemes from './assets/img/bad.vibes.memes.svg';
+import chibirdart from './assets/img/chibirdart.svg';
+import razoesparaacreditar from './assets/img/razoesparaacreditar.svg';
+import adorable_animals from './assets/img/adorable_animals.svg';
+import smallcutecats from './assets/img/smallcutecats.svg';
+import respondeai from './assets/img/respondeai.svg';
+import filomoderna from './assets/img/filomoderna.svg';
+import memeriagourmet from './assets/img/memeriagourmet.svg';
+
 export default function Sugestoes() {
-    const sugestoes = [['./assets/img/bad.vibes.memes.svg', 'bad.vibes.memes'], ['../assets/img/chibirdart.svg', 'chibirdart'], ['./assets/img/razoesparaacreditar.svg', 'razoesparaacreditar'], ['./assets/img/adorable_animals.svg', 'adorable_animals'], ['./assets/img/smallcutecats.svg', 'smallcutecats'], ['./assets/img/respondeai.svg', 'respondeai'], ['./assets/img/filomoderna.svg', 'filomoderna'], ['./assets/img/memeriagourmet.svg', 'memeriagourmet']];
+    const sugestoes = [[badvibesmemes, 'bad.vibes.memes'], [chibirdart, 'chibirdart'], [razoesparaacreditar, 'razoesparaacreditar'], [adorable_animals, 'adorable_animals'], [smallcutecats, 'smallcutecats'], [respondeai, 'respondeai'], [filomoderna, 'filomoderna'], [memeriagourmet, 'memeriagourmet']];
     return (
         <div className="sugestoes">
             <div className="titulo">

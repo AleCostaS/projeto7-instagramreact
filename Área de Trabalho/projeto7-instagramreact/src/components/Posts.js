@@ -1,20 +1,45 @@
+import meowed from './assets/img/meowed.svg';
+import gatotelefone from './assets/img/gato-telefone.svg';
+import respondeai from './assets/img/respondeai.svg';
+import barked from './assets/img/barked.svg';
+import dog from './assets/img/dog.svg';
+import adorableanimals from './assets/img/adorable_animals.svg';
+
 export default function Posts() {
-    const users = [['../assets/img/meowed.svg', 'meowed', 'assets/img/gato-telefone.svg', 'assets/img/respondeai.svg', 'respondeai', '101.523'], ['../assets/img/barked.svg', 'barked', 'assets/img/dog.svg', 'assets/img/adorable_animals.svg', 'adorable_animals', '99.159']];
+    const users = [[meowed, 'meowed', gatotelefone, respondeai, 'respondeai', '101.523'], [barked, 'barked', dog, adorableanimals, 'adorable_animals', '99.159']];
     
-    const curtir = e => {
+    function curtir (e){
         let v = false;
-        const like = e.target.parentNode;
+        let like;
+        if (!e.target){
+            like = e;
+        } else {
+            like = e.target.parentNode;
+        }
+        
         if (!like.classList.contains('liked')){
             v = !v;
         }
         like.classList.toggle('liked');
         
-        e.target.name = v ? 'heart' : 'heart-outline';
+        like.children[0].name = v ? 'heart' : 'heart-outline';
+    }
+
+    const curtirPost = e => {
+        // salva na constante like o botão do post que foi curtido
+        const like = e.target.parentNode.parentNode.children[2].children[0].children[0].children[0];
+
+        if (!like.classList.contains('liked')){
+            e.target.parentNode.classList.add('gostei');
+            setTimeout(function(){e.target.parentNode.classList.remove('gostei')}, 2000);
+        }
+        curtir(like)
     }
     
     return (
         <div className="posts">
             {users.map(user => {
+            ;
             return (
             <div className="post">
                 <div className="topo">
@@ -27,8 +52,9 @@ export default function Posts() {
                     </div>
                 </div>
 
-                <div className="conteudo">
+                <div className="conteudo" onClick={curtirPost}>
                     <img src={user[2]} />
+                    <ion-icon name="heart"></ion-icon>
                 </div>
 
                 <div className="fundo">

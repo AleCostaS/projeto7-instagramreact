@@ -1,5 +1,7 @@
+import userFoto from './assets/img/catanacomics.svg';
+
 export default function User() {
-    const user = ['assets/img/catanacomics.svg', 'catanacomics', 'Catana']
+    const user = [userFoto, 'catanacomics', 'Catana']
     return (
         <div className="usuario">
             <img src={user[0]} />

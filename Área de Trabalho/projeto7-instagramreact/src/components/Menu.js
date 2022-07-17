@@ -1,5 +1,6 @@
+import logo from './assets/img/logo.png';
+
 export default function Menu() {
-const logo = '../assets/img/logo.png';
 
     return (
         <div className="navbar">

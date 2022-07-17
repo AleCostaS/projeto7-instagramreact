@@ -310,8 +310,30 @@ body {
   display: none !important;
 }
 
-.liked ion-icon{
+.liked ion-icon {
   color: red;
+}
+
+.conteudo ion-icon {
+  font-size: 0px;
+  color: red;
+  z-index: 1;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.gostei ion-icon{
+  font-size: 88px;
+  top: 44%;
+  left: 44%;
+  opacity: 0;
+  transition: font-size 1s, top 1s, left 1s, opacity 2s;
+}
+
+.conteudo {
+  position: relative;
 }
 
 @media (max-width: 935px) {
