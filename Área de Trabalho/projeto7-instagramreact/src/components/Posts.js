@@ -32,8 +32,8 @@ export default function Posts() {
         if (!like.classList.contains('liked')){
             e.target.parentNode.classList.add('gostei');
             setTimeout(function(){e.target.parentNode.classList.remove('gostei')}, 2000);
+            curtir(like)
         }
-        curtir(like)
     }
     
     return (
