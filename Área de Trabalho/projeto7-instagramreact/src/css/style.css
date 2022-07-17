@@ -325,9 +325,9 @@ body {
 }
 
 .gostei ion-icon{
-  font-size: 88px;
-  top: 44%;
-  left: 44%;
+  font-size: 128px;
+  top: 41%;
+  left: 41%;
   opacity: 0;
   transition: font-size 1s, top 1s, left 1s, opacity 2s;
 }
