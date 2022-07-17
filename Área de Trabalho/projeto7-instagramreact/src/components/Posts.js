@@ -1,5 +1,5 @@
 export default function Posts() {
-    const users = [['../assets/img/9gag.svg', '9gag'], ['../assets/img/meowed.svg', 'meowed'], ['./assets/img/barked.svg', 'barked'], ['./assets/img/nathanwpylestrangeplanet.svg', 'nathanwpylestrangeplanet'], ['./assets/img/wawawicomics.svg', 'wawawicomics'], ['./assets/img/respondeai.svg', 'respondeai'], ['./assets/img/filomoderna.svg', 'filomoderna'], ['./assets/img/memeriagourmet.svg', 'memeriagourmet']];
+    const users = [['../assets/img/meowed.svg', 'meowed', 'assets/img/gato-telefone.svg', 'assets/img/respondeai.svg', 'respondeai', '101.523'], ['../assets/img/barked.svg', 'barked', 'assets/img/dog.svg', 'assets/img/adorable_animals.svg', 'adorable_animals', '99.159']];
     return (
         <div className="posts">
             {users.map(user => {
@@ -15,12 +15,12 @@ export default function Posts() {
                     </div>
                 </div>
 
-                <div class="conteudo">
+                <div className="conteudo">
                     <img src={user[2]} />
                 </div>
 
-                <div class="fundo">
-                    <div class="acoes">
+                <div className="fundo">
+                    <div className="acoes">
                     <div>
                         <ion-icon name="heart-outline"></ion-icon>
                         <ion-icon name="chatbubble-outline"></ion-icon>
@@ -31,9 +31,9 @@ export default function Posts() {
                     </div>
                     </div>
 
-                    <div class="curtidas">
+                    <div className="curtidas">
                     <img src={user[3]} />
-                    <div class="texto">
+                    <div className="texto">
                         Curtido por <strong>{user[4]}</strong> e <strong>outras {user[5]} pessoas</strong>
                     </div>
                     </div>
